@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+   <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> </script>
+    <script src="myscript1.js"></script>
+    <title></title>
+</head>
+<body ng-app="my module">
+    <div ng-controller="mycontroller">
+   <table>
+       <thead>
+           <tr>
+               
+               <th>FirstName</th>
+               <th>Gender</th>
+               <th>Salary</th>
+               
+               </tr>
+           </thead>
+       <tbody ng-repeat="employee in details">
+           <tr>
+
+             <td>{{employee.firstname}}-parentindex-{{$parent.$index}},Index={{$index}}</td>
+               <td>{{employee.gender}}-{{$parent.$index}},Index={{$index}}</td>
+               <td>{{employee.salary}}-{{$parent.$index}},Index={{$index}}</td>
+
+           </tr>
+
+           </tbody>
+
+       </table>
+
+        </div>
+
+
+</body>
+</html>
