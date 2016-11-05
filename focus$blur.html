@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>
+This is jquery program
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+$("input").focus(function(){
+$(this).css("background-color","red");
+
+
+});
+$("input").blur(function(){
+$(this).css("background-color","#dee1e5");
+
+
+});
+
+});
+</script>
+<body>
+Name:<input type="text" name="fullname"/>
+Email:<input type="text" name="email"/>
+</body>

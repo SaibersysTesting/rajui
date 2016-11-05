@@ -1,42 +1,14 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<p>input text in below box </p>
+<div ng-app>
+<p>Name:<input type="text" ng-model="name"></p>
+<h1 ng-bind="name"></h1>
+</div>
 <head>
-    <meta charset="utf-8" />
-    
-    <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js> </script>
-   <script src="myscript1.js"></script>
-    <title></title>
 </head>
-<body ng-app="my module">
-    <div ng-controller="mycontroller" >
-        <div>
-      First Name:  <input type="text" ng-model="employee.firstname">
-            </div>
-        <div>
-       Last Name:     <input type="text" ng-model="employee.lastname">
-        </div>
-        <div>
-       Gender:     <input type="text" ng-model="employee.gender">
-        </div>
-        <div>
-       Age:     <input type="number" ng-model="employee.age">
-        </div>
-        <br /><br />
+<body>
 
-
-        <div>
-            First Name:  {{employee.firstname}}
-        </div>
-        <div>
-            Last Name:   {{employee.lastname}}
-        </div>
-        <div>
-            Gender:     {{employee.gender}}
-        </div>
-        <div>
-            Age:     {{employee.age}}
-       
-        </div>
 </body>
 </html>
